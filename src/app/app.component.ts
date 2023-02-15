@@ -15,6 +15,8 @@ export class AppComponent implements AfterViewInit{
   ) {
     
    }
+   //Prérequis : le nom du jsp (exemple AT02)
+   //Tache: Comment charger dynamiquement les components (exemple component at01 et at02) à partir du nom su sp (string)
    ngAfterViewInit(): void {
     const componentFactory = this.factoryResolver.resolveComponentFactory(AT02Component);
     console.log(this.dynamicInsert);
